@@ -92,14 +92,14 @@ function nextSlide() {
 setInterval(nextSlide, 7000);
 
 
-const slides1 = document.querySelectorAll('.hero-slider .slide');
+// const slides1 = document.querySelectorAll('.hero-slider .slide');
 const btnLeft = document.querySelector('.hero-scroll-btn.left');
 const btnRight = document.querySelector('.hero-scroll-btn.right');
 const dots = document.querySelectorAll('.dots-container .dot');
 let currentIndex = 0;
 
 function showSlide(index) {
-  slides1.forEach((slide, i) => {
+  slides.forEach((slide, i) => {
     slide.classList.toggle('active', i === index);
   });
   dots.forEach((dot, i) => {
@@ -108,12 +108,12 @@ function showSlide(index) {
 }
 
 btnRight.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % slides1.length;
+  currentIndex = (currentIndex + 1) % slides.length;
   showSlide(currentIndex);
 });
 
 btnLeft.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + slides1.length) % slides1.length;
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
   showSlide(currentIndex);
 });
 
