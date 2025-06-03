@@ -37,7 +37,7 @@ How to Run:
 
 Future Enhancements:
 --------------------
-- Backend integration for authentication and dynamic content
+- Backend integration for authentication and dynamic content(NOT yet completed)
 - Search functionality
 - Movie trailer preview modals
 - User login/dashboard
