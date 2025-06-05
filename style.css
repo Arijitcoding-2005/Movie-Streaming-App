@@ -499,7 +499,7 @@ span.copyright {
   height: 43px;
   border: 2px solid red;
   position: absolute;
-  right: 152px;
+  right: 116px;
   top: 0;
   border-radius: 85px;
   margin-top: 8px;
@@ -517,7 +517,7 @@ span.copyright {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 91px;
+  right: 62px;
   top: 0px;
   height: 79px;
   width: 32px;
@@ -681,4 +681,59 @@ span.copyright {
 
 .userdrop li:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+#top {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: #ff4b2b transparent;
+  padding-bottom: 17px;
+}
+
+
+#top::-webkit-scrollbar {
+  height: 14px;
+}
+
+#top::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 20px;
+}
+
+/* #top::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border-radius: 20px;
+  border: 3px solid black; 
+} */
+
+/* #top::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+} */
+
+#top::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.search{
+  height: 40px;
+  width: auto;
+  color: white;
+  position: absolute;
+  left: 42%;
+  top: 23px;
+  cursor:pointer;
+}
+
+
+.search span img{
+  height: 25px;
+  width: auto;
+
+  position: relative;
+  
+}
+.search span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
 }
